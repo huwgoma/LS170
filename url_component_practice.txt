@@ -1,0 +1,57 @@
+(1) Given the following URL:
+https://amazon.com/Double-Stainless-Commercial-Refrigerator/B60HON32?ie=UTF8&qid=142952676&sr=93&keywords=commercial+fridge
+
+a. Identify the host:
+   A: amazon.com
+
+b. Identify the -names- of the query parameters:
+   A: ie, qid, sr, keywords
+c. Identify the -values- of the query parameters:
+   A: UTF8, 142952676, 93, commercial+fridge
+
+d. Identify the scheme:
+   A: https
+
+e. Identify the path:
+   A: /Double-Stainless-Commercial-Refrigerator/B60HON32
+
+f: Identify the port:
+   A: 443 (Implicit)
+
+
+(2) Add the port 3000 to the following URL:
+http://amazon.com/products/B60HON32?qid=142952676&sr=93
+
+A: http://amazon.com:3000/products/B60HON32?qid=142952676&sr=93
+
+
+(3) Given the following URL:
+http://localhost:4567/todos/15
+
+a. Identify the query parameters:
+   A: None 
+b: Identify the scheme:
+   A: http
+c: Identify the path:
+   A: /todos/15
+d: Identify the host:
+   A: localhost
+e: Identify the port:
+   A: :4567
+
+
+(4) What are two different ways to encode a space character in a query parameter?
+A: Either by replacing the space with a plus sign (+), or with percent encoding
+   (%20).
+
+
+(5) What character indicates the beginning of a URL's query parameters?
+A: ?
+
+
+(6) What character is used between the name and value of a query parameter?
+A: = 
+
+
+(7) What character is used between multiple query parameters?
+A: &
