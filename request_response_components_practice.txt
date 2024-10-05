@@ -1,0 +1,15 @@
+(1) What are the required components of an HTTP request? What are the additional
+    optional components?
+    A: The required components are the method, the path, and the Host header.
+       The optional components are the parameters, all other headers, and the body.
+
+(2) What are the required components of an HTTP response? What are the additional
+    optional components?
+    A: The required components are the status code and the Content-Type header.
+       The optional components are the body and all other headers.
+
+(3) What determines whether a request should use GET or POST as its method?
+    A: GET requests should be used to retrieve some data from the server.
+       - GET requests generally should not change the state of the server.
+       POST requests should be used to submit some data to the server.
+       - POST requests will generally modify the state of the server in some way.
