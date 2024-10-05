@@ -1,0 +1,25 @@
+Netcat is a network utility for reading/writing data across network connections,
+using either TCP or UDP.
+
+Netcat allows you to connect to a domain and port:
+$ netcat -v google.com 80
+#=> Connection to google.com (142.251.41.78) 80 port [tcp/http] succeeded!
+$ GET / 
+#=> HTML for google.com
+
+# ====================================================
+
+Netcat also allows you to *listen* on a port for incoming requests, using the -l flag.
+(Server Terminal:)
+$ netcat -lv 2345 
+#=> Listening on 0.0.0.0 2345
+
+(Client Terminal:)
+$ netcat -v localhost 2345
+#=> Connection to localhost (127.0.0.1) 2345 port [tcp/*] succeeded!
+
+(Server Terminal:)
+#=> Connection received on localhost 55576
+
+Now, we can send messages across the client-server TCP connection.
+
