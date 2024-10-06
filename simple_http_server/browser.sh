@@ -12,9 +12,10 @@
 function server () {
   while true
   do
-    # Parse request 
+    # Parse Request 
     message_arr=()
     check=true
+    # Read a line of input from the request, until the length of the line is 1 (EoR)
     while $check
     do
       read line
@@ -24,6 +25,7 @@ function server () {
         check=false
       fi
     done
+    # The method and path are the first and second lines of the request.
     method=${message_arr[0]}
     path=${message_arr[1]}
 

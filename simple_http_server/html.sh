@@ -18,10 +18,11 @@ function server () {
 
     if [[ $method = 'GET' ]]
     then
-      if [[ -f ./www$path ]]
+      file_path=./www$path
+      if [[ -f $file_path ]]
       then
         echo -ne "HTTP/1.1 200 OK\r\n\r\n"
-        cat ./www$path
+        cat $file_path
       else
         echo -ne "HTTP/1.1 404 Not Found\r\n\r\n"
       fi
